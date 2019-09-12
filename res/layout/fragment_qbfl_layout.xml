@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/fragment_sy_kefu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="取消" />
+
+        <EditText
+            android:id="@+id/fragment_sy_search_ed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/fragment_sy_kefu_tv"
+            android:background="@drawable/sy_search_bg"
+            android:gravity="center"
+            android:hint="输入搜索内容"
+            android:textSize="@dimen/_textsize12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/fragment_sy_search_ed"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_sy_search" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_lite"
+                android:orientation="vertical"
+                android:paddingBottom="1px" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="全部品牌"
+                    android:textSize="@dimen/_textsize14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="杀菌剂"
+                    android:textSize="@dimen/_textsize14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="杀虫剂"
+                    android:textSize="@dimen/_textsize14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="除草剂"
+                    android:textSize="@dimen/_textsize14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="生长调节剂"
+                    android:textSize="@dimen/_textsize14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="杀螨剂"
+                    android:textSize="@dimen/_textsize14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="肥料化肥"
+                    android:textSize="@dimen/_textsize14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="杀卵杀虫专区"
+                    android:textSize="@dimen/_textsize14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="病毒病专区"
+                    android:textSize="@dimen/_textsize14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="飞虱蓟马蚜虫"
+                    android:textSize="@dimen/_textsize14sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f3f3f3"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+                </LinearLayout>
+                
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+                </LinearLayout>
+                
+                  <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+                </LinearLayout>
+                
+                   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+                </LinearLayout>
+                
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+                </LinearLayout>
+                
+                     <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+                </LinearLayout>
+                
+                      <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+                </LinearLayout>
+                
+                      
+                       <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+                </LinearLayout>
+                
+                        <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+                </LinearLayout>
+                
+                         <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:drawableTop="@drawable/pinpai_image_test"
+                        android:gravity="center"
+                        android:text="巴斯夫" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

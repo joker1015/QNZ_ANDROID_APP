@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_lite"
+    android:paddingBottom="50dp" >
+
+    <RelativeLayout
+        android:id="@+id/fragment_gwc_title_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购物车"
+            android:textSize="@dimen/_textsize14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="管理"
+            android:textSize="@dimen/_textsize12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_gwc_bottom_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="10dp" >
+
+        <CheckBox
+            android:id="@+id/fragment_gwc_bottom_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="全选" />
+
+        <Button
+            android:id="@+id/fragment_gwc_bottom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#FDCF15"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="10dp"
+            android:text="结算" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/fragment_gwc_bottom_button"
+            android:layout_toRightOf="@id/fragment_gwc_bottom_checkbox"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="合计：￥14456.26" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fragment_gwc_bottom_content"
+        android:layout_below="@id/fragment_gwc_title_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/fragment_gwc_item_layout" />
+
+            <include layout="@layout/fragment_gwc_item_layout" />
+
+            <include layout="@layout/fragment_gwc_item_layout" />
+
+            <include layout="@layout/fragment_gwc_item_layout" />
+
+            <include layout="@layout/fragment_gwc_item_layout" />
+
+            <include layout="@layout/fragment_gwc_item_layout" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
