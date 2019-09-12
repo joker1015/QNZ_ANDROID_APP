@@ -3,5 +3,6 @@
 
     <color name="gray_lite">#f0f0f0</color>
     <color name="red_text">#f34545</color>
+    <color name="blue_bg">#2d82f3</color>
 
 </resources>

@@ -11,6 +11,7 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
+        public static final int blue_bg=0x7f040002;
         public static final int gray_lite=0x7f040000;
         public static final int red_text=0x7f040001;
     }
@@ -30,46 +31,67 @@ public final class R {
         public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int hd_banner_test=0x7f020000;
-        public static final int hd_image_test=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int icon_arrow_right=0x7f020003;
-        public static final int icon_fl=0x7f020004;
-        public static final int icon_fl_selected=0x7f020005;
-        public static final int icon_gwc=0x7f020006;
-        public static final int icon_gwc_selected=0x7f020007;
-        public static final int icon_hd=0x7f020008;
-        public static final int icon_large=0x7f020009;
-        public static final int icon_manzeng=0x7f02000a;
-        public static final int icon_normal=0x7f02000b;
-        public static final int icon_normal_selected=0x7f02000c;
-        public static final int icon_qgsp=0x7f02000d;
-        public static final int icon_spgy=0x7f02000e;
-        public static final int icon_sy=0x7f02000f;
-        public static final int icon_sy_search=0x7f020010;
-        public static final int icon_sy_selected=0x7f020011;
-        public static final int icon_tehui=0x7f020012;
-        public static final int icon_thm=0x7f020013;
-        public static final int icon_thsp=0x7f020014;
-        public static final int icon_tjsp=0x7f020015;
-        public static final int icon_tuijian=0x7f020016;
-        public static final int icon_vp_normal=0x7f020017;
-        public static final int icon_vp_selected=0x7f020018;
-        public static final int icon_vztj=0x7f020019;
-        public static final int icon_wd=0x7f02001a;
-        public static final int icon_wd_selected=0x7f02001b;
-        public static final int pinpai_image_test=0x7f02001c;
-        public static final int product_image_for_gwc_test=0x7f02001d;
-        public static final int product_image_test=0x7f02001e;
-        public static final int sy_guanggao_5zhe=0x7f02001f;
-        public static final int sy_guanggao_v=0x7f020020;
-        public static final int sy_qg_imagebg=0x7f020021;
-        public static final int sy_qg_nr_bg=0x7f020022;
-        public static final int sy_search_bg=0x7f020023;
-        public static final int tab_bg=0x7f020024;
+        public static final int btn_add=0x7f020000;
+        public static final int btn_jiesuan=0x7f020001;
+        public static final int btn_reduce=0x7f020002;
+        public static final int checkbox_drawable_round=0x7f020003;
+        public static final int checkbox_round_checked=0x7f020004;
+        public static final int checkbox_round_uncheck=0x7f020005;
+        public static final int fragment_be_v_image=0x7f020006;
+        public static final int fragment_userimage_bound=0x7f020007;
+        public static final int hd_banner_test=0x7f020008;
+        public static final int hd_image_test=0x7f020009;
+        public static final int ic_launcher=0x7f02000a;
+        public static final int icon_arrow_right=0x7f02000b;
+        public static final int icon_bbsj=0x7f02000c;
+        public static final int icon_dfh=0x7f02000d;
+        public static final int icon_dfk=0x7f02000e;
+        public static final int icon_dsh=0x7f02000f;
+        public static final int icon_dzgl=0x7f020010;
+        public static final int icon_fl=0x7f020011;
+        public static final int icon_fl_selected=0x7f020012;
+        public static final int icon_gszp=0x7f020013;
+        public static final int icon_gwc=0x7f020014;
+        public static final int icon_gwc_selected=0x7f020015;
+        public static final int icon_gyqg=0x7f020016;
+        public static final int icon_gys=0x7f020017;
+        public static final int icon_gywm=0x7f020018;
+        public static final int icon_hd=0x7f020019;
+        public static final int icon_large=0x7f02001a;
+        public static final int icon_llwm=0x7f02001b;
+        public static final int icon_manzeng=0x7f02001c;
+        public static final int icon_normal=0x7f02001d;
+        public static final int icon_normal_selected=0x7f02001e;
+        public static final int icon_qgsp=0x7f02001f;
+        public static final int icon_sh=0x7f020020;
+        public static final int icon_spgy=0x7f020021;
+        public static final int icon_sy=0x7f020022;
+        public static final int icon_sy_search=0x7f020023;
+        public static final int icon_sy_selected=0x7f020024;
+        public static final int icon_tehui=0x7f020025;
+        public static final int icon_thm=0x7f020026;
+        public static final int icon_thsp=0x7f020027;
+        public static final int icon_tjsp=0x7f020028;
+        public static final int icon_tuijian=0x7f020029;
+        public static final int icon_vp_normal=0x7f02002a;
+        public static final int icon_vp_selected=0x7f02002b;
+        public static final int icon_vztj=0x7f02002c;
+        public static final int icon_wd=0x7f02002d;
+        public static final int icon_wd_selected=0x7f02002e;
+        public static final int icon_yhq=0x7f02002f;
+        public static final int icon_yjfk=0x7f020030;
+        public static final int pinpai_image_test=0x7f020031;
+        public static final int product_image_for_gwc_test=0x7f020032;
+        public static final int product_image_test=0x7f020033;
+        public static final int sy_guanggao_5zhe=0x7f020034;
+        public static final int sy_guanggao_v=0x7f020035;
+        public static final int sy_qg_imagebg=0x7f020036;
+        public static final int sy_qg_nr_bg=0x7f020037;
+        public static final int sy_search_bg=0x7f020038;
+        public static final int tab_bg=0x7f020039;
     }
     public static final class id {
-        public static final int action_settings=0x7f090019;
+        public static final int action_settings=0x7f09001d;
         public static final int all=0x7f090011;
         public static final int custom_tab_fl_iv=0x7f090003;
         public static final int custom_tab_gwc_iv=0x7f090005;
@@ -81,11 +103,15 @@ public final class R {
         public static final int fragment_gwc_bottom_checkbox=0x7f09000f;
         public static final int fragment_gwc_bottom_content=0x7f09000e;
         public static final int fragment_gwc_title_content=0x7f09000d;
+        public static final int fragment_history_left_tv=0x7f09001c;
+        public static final int fragment_history_rigth_tv=0x7f09001b;
         public static final int fragment_sy_banner_vp=0x7f090017;
         public static final int fragment_sy_kefu_tv=0x7f090015;
         public static final int fragment_sy_qg_name_tv=0x7f090018;
         public static final int fragment_sy_search_ed=0x7f090016;
         public static final int fragment_tab=0x7f090001;
+        public static final int fragment_wd_bev_iv=0x7f09001a;
+        public static final int fragment_wd_setting_tv=0x7f090019;
         public static final int gwc_item_btn_add=0x7f09000a;
         public static final int gwc_item_btn_reduce=0x7f09000c;
         public static final int gwc_item_checkbox=0x7f090007;
@@ -107,6 +133,8 @@ public final class R {
         public static final int fragment_sy_jrth_item_layout=0x7f030007;
         public static final int fragment_sy_layout=0x7f030008;
         public static final int fragment_sy_tjzq_item_layout=0x7f030009;
+        public static final int fragment_wd_layout=0x7f03000a;
+        public static final int fragment_wd_lsll_item_layout=0x7f03000b;
     }
     public static final class menu {
         public static final int main=0x7f080000;

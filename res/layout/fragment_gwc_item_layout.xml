@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginTop="5dp"
     android:background="@android:color/white"
+    android:gravity="center_vertical"
     android:orientation="horizontal"
     android:padding="10dp" >
 
@@ -11,22 +12,22 @@
         android:id="@+id/gwc_item_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true" />
+        android:background="@drawable/checkbox_drawable_round"
+        android:button="@null"
+        android:textSize="1sp" />
 
     <ImageView
         android:id="@+id/gwc_item_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@id/gwc_item_checkbox"
+        android:layout_marginLeft="10dp"
         android:src="@drawable/product_image_for_gwc_test" />
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@id/gwc_item_image"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
         android:padding="3dp" >
 
         <TextView
@@ -36,46 +37,47 @@
             android:maxLines="2"
             android:text="阿萨德来开发地方拉丝机开发讲大路口时代峻峰阿时代峻峰雷克萨斯打飞机阿斯利康电放费奥斯卡了京东方" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@id/gwc_item_name_tv"
-            android:layout_marginTop="10dp"
-            android:text="￥720.00" />
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
 
-        <Button
-            android:id="@+id/gwc_item_btn_add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_below="@id/gwc_item_name_tv"
-            android:minHeight="5dp"
-            android:minWidth="0dp"
-            android:padding="10dp"
-            android:text="+" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥720.00" />
 
-        <TextView
-            android:id="@+id/gwc_item_count_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/gwc_item_name_tv"
-            android:layout_toLeftOf="@id/gwc_item_btn_add"
-            android:minHeight="5dp"
-            android:minWidth="0dp"
-            android:padding="10dp"
-            android:text="1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal" >
 
-        <Button
-            android:id="@+id/gwc_item_btn_reduce"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/gwc_item_name_tv"
-            android:layout_toLeftOf="@id/gwc_item_count_tv"
-            android:minHeight="5dp"
-            android:minWidth="0dp"
-            android:padding="10dp"
-            android:text="+" />
-    </RelativeLayout>
+                <Button
+                    android:id="@+id/gwc_item_btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_reduce"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp" />
 
-</RelativeLayout>
+                <TextView
+                    android:id="@+id/gwc_item_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/gwc_item_btn_reduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_add"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
