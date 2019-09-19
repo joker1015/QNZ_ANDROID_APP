@@ -12,7 +12,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -22,6 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SearchActivity" />
+         <activity android:name=".KefuActivity" />
+         <activity android:name=".QiangGouActivity"></activity>
     </application>
 
 </manifest>

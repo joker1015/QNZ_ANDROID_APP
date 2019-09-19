@@ -43,6 +43,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_toLeftOf="@+id/fragment_sy_kefu_tv"
                     android:background="@drawable/sy_search_bg"
+                    android:focusable="false"
                     android:gravity="center"
                     android:hint="输入搜索内容"
                     android:textSize="@dimen/_textsize12sp" />
@@ -125,6 +126,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/fragment_sy_qianggou_content"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="5"
