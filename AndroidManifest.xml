@@ -24,7 +24,9 @@
         </activity>
         <activity android:name=".SearchActivity" />
          <activity android:name=".KefuActivity" />
-         <activity android:name=".QiangGouActivity"></activity>
+         <activity android:name=".QiangGouActivity"/>
+         <activity android:name=".HDDetailActivity"/>
+         <activity  android:name=".SPXQActivity"/>
     </application>
 
 </manifest>

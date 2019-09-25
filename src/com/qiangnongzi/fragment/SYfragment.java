@@ -3,6 +3,7 @@ package com.qiangnongzi.fragment;
 import com.qiangnongzi.app.KefuActivity;
 import com.qiangnongzi.app.QiangGouActivity;
 import com.qiangnongzi.app.R;
+import com.qiangnongzi.app.SPXQActivity;
 import com.qiangnongzi.app.SearchActivity;
 
 import android.content.Intent;
@@ -32,6 +33,7 @@ public class SYfragment extends BaseFragment implements OnClickListener {
 		rootview.findViewById(R.id.fragment_sy_search_ed).setOnClickListener(this);
 		rootview.findViewById(R.id.fragment_sy_kefu_tv).setOnClickListener(this);
 		rootview.findViewById(R.id.fragment_sy_qianggou_content).setOnClickListener(this);
+		rootview.findViewById(R.id.fragment_sy_jrth_content1).setOnClickListener(this);
 	}
 
 	@Override
@@ -49,9 +51,18 @@ public class SYfragment extends BaseFragment implements OnClickListener {
 		case R.id.fragment_sy_qianggou_content:
 			toQianggouActivity();
 			break;
+		case R.id.fragment_sy_jrth_content1:
+			toDetail();
+			break;
 		default:
 			break;
 		}
+	}
+
+	private void toDetail() {
+		// TODO Auto-generated method stub
+		Intent intent=new Intent(getActivity(), SPXQActivity.class);
+		startActivity(intent);
 	}
 
 	private void toQianggouActivity() {
