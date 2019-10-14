@@ -23,10 +23,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".SearchActivity" />
-         <activity android:name=".KefuActivity" />
-         <activity android:name=".QiangGouActivity"/>
-         <activity android:name=".HDDetailActivity"/>
-         <activity  android:name=".SPXQActivity"/>
+        <activity android:name=".KefuActivity" />
+        <activity android:name=".QiangGouActivity" />
+        <activity android:name=".HDDetailActivity" />
+        <activity android:name=".SPXQActivity" />
+        <activity android:name=".UpgradeActivity" />
+        <activity android:name=".AddressActivity" />
+        <activity android:name=".AddressEditActivity" />
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".AboutusActivity" />
+        <activity android:name=".ZhaopinActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".FapiaoActivity" />
+        <activity android:name=".EditFapiaoActivity" />
+        <activity android:name=".ChangepwdActivity" />
     </application>
 
 </manifest>
