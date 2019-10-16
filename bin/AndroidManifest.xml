@@ -37,6 +37,10 @@
         <activity android:name=".FapiaoActivity" />
         <activity android:name=".EditFapiaoActivity" />
         <activity android:name=".ChangepwdActivity" />
+        <activity android:name=".LoginSMSActivity" />
+        <activity android:name=".VerifysmsActivity" />
+        <activity android:name=".LoginPWDActivity" />
+        <activity android:name=".RegisterActivity" />
     </application>
 
 </manifest>

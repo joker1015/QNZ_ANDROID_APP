@@ -3,6 +3,7 @@ package com.qiangnongzi.fragment;
 import com.qiangnongzi.app.AboutusActivity;
 import com.qiangnongzi.app.AddressActivity;
 import com.qiangnongzi.app.FeedbackActivity;
+import com.qiangnongzi.app.LoginSMSActivity;
 import com.qiangnongzi.app.R;
 import com.qiangnongzi.app.SettingActivity;
 import com.qiangnongzi.app.ZhaopinActivity;
@@ -37,6 +38,7 @@ public class WDfragment extends BaseFragment implements OnClickListener {
 		rootview.findViewById(R.id.fragment_wd_aboutus_iv).setOnClickListener(this);
 		rootview.findViewById(R.id.fragment_wd_zhaopin_iv).setOnClickListener(this);
 		rootview.findViewById(R.id.fragment_wd_setting_tv).setOnClickListener(this);
+		rootview.findViewById(R.id.fragment_wd_headimage_iv).setOnClickListener(this);
 	}
 
 	@Override
@@ -58,20 +60,29 @@ public class WDfragment extends BaseFragment implements OnClickListener {
 		case R.id.fragment_wd_setting_tv:
 			toSetting();
 			break;
+		case R.id.fragment_wd_headimage_iv:
+			toLogin();
+			break;
 		default:
 			break;
 		}
 	}
 
+	private void toLogin() {
+		// TODO Auto-generated method stub
+		Intent intent=new Intent(getActivity(), LoginSMSActivity.class);
+		startActivity(intent);
+	}
+
 	private void toSetting() {
 		// TODO Auto-generated method stub
-		Intent intent=new Intent(getActivity(), SettingActivity.class);
+		Intent intent = new Intent(getActivity(), SettingActivity.class);
 		startActivity(intent);
 	}
 
 	private void toZhaopin() {
 		// TODO Auto-generated method stub
-		Intent intent=new Intent(getActivity(), ZhaopinActivity.class);
+		Intent intent = new Intent(getActivity(), ZhaopinActivity.class);
 		startActivity(intent);
 	}
 
